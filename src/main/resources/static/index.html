@@ -3,17 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" rel="stylesheet">
-    <title>MusicMania</title>
-    <script src = "./script.js" defer async></script>
+    <link href="./css/all.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <title>Animal Mania</title>
+    <script src="./script.js" defer async></script>
 </head>
 <body>
-<div id="div1">
-    <button class="button is-info" id="b1">Dog</button>
-    <button class="button is-success" id="b2">Wolf</button>
-    <button class="button is-warning" id="b3">Insect</button>
-    <button class="button is-danger" id="b4">Lion</button>
+<div class="container">
+    <div class="notification is-primary">
+        <div class="columns is-centered">
+            <h1 class="title is-1">Animal Mania</h1>
+        </div>
+    </div>
 </div>
-
+<section class="section">
+    <div class="columns is-centered">
+        <div class="column is-half">
+            <div class="columns is-mobile is-multiline is-centered">
+                <div class="column is-narrow">
+                    <p class="bd-notification is-primary">
+                        <button class="button is-info" id="b1">
+                            <i class="fas fa-dog"></i>
+                        </button>
+                    </p>
+                </div>
+                <div class="column is-narrow">
+                    <p class="bd-notification is-primary">
+                        <button class="button is-success" id="b2"><i class="fab fa-wolf-pack-battalion"></i></button>
+                    </p>
+                </div>
+                <div class="column is-narrow">
+                    <p class="bd-notification is-primary">
+                        <button class="button is-warning" id="b3"><i class="fas fa-bug"></i></button>
+                    </p>
+                </div>
+                <div class="column is-narrow">
+                    <p class="bd-notification is-primary">
+                        <button class="button is-danger" id="b4"><i class="fas fa-cat"></i></button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <audio id="a1" src="./music/1.wav"></audio>
 <audio id="a2" src="./music/2.wav"></audio>
 <audio id="a3" src="./music/3.wav"></audio>
